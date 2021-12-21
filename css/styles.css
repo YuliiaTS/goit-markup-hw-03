@@ -13,7 +13,26 @@ body {
     color: var(--text-color);
 }
 
+p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
 
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ECECEC;
+}
 
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -52,6 +71,12 @@ a[href] {
     margin: -1px;
   }
 
+  .container {
+      width: 1200px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin: 0 auto;
+  }
 
 .link-nav {
     font-weight: 500;
