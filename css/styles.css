@@ -41,6 +41,7 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--brand-color);
+    display: block;
 }
 .logo-nav {
     color: var(--text-color);
@@ -83,6 +84,8 @@ a[href] {
     font-size: 14px;
     line-height: 1.14;
     color: var(--text-color);
+    padding: 32px 0;
+    display: block;
 }
 .link-nav:hover,
 .link-nav:focus {
@@ -95,6 +98,10 @@ a[href] {
 }
 
 .site-nav {
+    display: flex;
+}
+
+.list-contact {
     display: flex;
 }
 
