@@ -89,6 +89,15 @@ a[href] {
     color: var(--brand-color);
 }
 
+.header-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.site-nav {
+    display: flex;
+}
+
 ul li.current a {
     color: var(--brand-color);
 }
