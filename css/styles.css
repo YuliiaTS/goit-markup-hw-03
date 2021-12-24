@@ -46,6 +46,7 @@ button {
     letter-spacing: 0.02em;
     color: var(--brand-color);
     display: block;
+    padding: 24px 0 25px;
     margin-right: 93px;
 }
 .logo-nav {
