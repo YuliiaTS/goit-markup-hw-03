@@ -46,7 +46,7 @@ button {
     letter-spacing: 0.02em;
     color: var(--brand-color);
     display: block;
-    padding-right: 93px;
+    margin-right: 93px;
 }
 .logo-nav {
     color: var(--text-color);
@@ -100,11 +100,27 @@ a[href] {
 
 .header-container {
     display: flex;
-    justify-content: space-between
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.site-nav {
+    display: flex;
+    align-items: flex-start;
+}
+
+.item-nav:not(:last-child) {
+    margin-right: 50px;
 }
 
 .list-contact {
     display: flex;
+    margin-left: auto;
 }
 
 ul li.current a {
@@ -117,6 +133,7 @@ ul li.current a {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
+    margin-right: 50px;
 }
 .contact-us-header:hover,
 .contact-us-header:focus {
@@ -266,9 +283,16 @@ ul li.current a {
     padding: 20px 24px;
 }
 
-
 .footer-bg {
     background-color: #2F303A;
+}
+
+.footer
+
+.footer-logo 
+
+.address-footer {
+    color: var(--accent-color);
 }
 
 .contacts-footer {
@@ -277,8 +301,4 @@ ul li.current a {
 
 address {
     font-style: normal;
-}
-
-.address-footer {
-    color: var(--accent-color);
 }
