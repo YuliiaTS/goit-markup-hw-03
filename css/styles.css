@@ -151,8 +151,8 @@ ul li.current a {
     line-height: 1.4;
     letter-spacing: 0.06em;
     text-align: center;
-    
 }
+
 .hero-btn {
     font-family: inherit;
     background: var(--brand-color);
