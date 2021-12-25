@@ -11,6 +11,7 @@ body {
     letter-spacing: 0.03em;
     background-color: var(--accent-color);
     color: var(--text-color);
+    margin: 0;
 }
 
 p,h1,h2,h3,h4,h5,h6 {
@@ -31,8 +32,6 @@ button {
 }
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: #ECECEC;
@@ -46,8 +45,8 @@ button {
     letter-spacing: 0.02em;
     color: var(--brand-color);
     display: block;
-    padding: 24px 0 25px;
-    margin-right: 93px;
+    /* padding: 24px 0 25px;
+    margin-right: 93px; */
 }
 .logo-nav {
     color: var(--text-color);
@@ -83,6 +82,7 @@ a[href] {
       padding-left: 15px;
       padding-right: 15px;
       margin: 0 auto;
+      outline: 2px solid tomato;
 }
 
 .link-nav {
@@ -102,27 +102,27 @@ a[href] {
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-.header-nav {
-    display: flex;
-    justify-content: flex-start;
 }
 
 .site-nav {
     display: flex;
-    align-items: flex-start;
+    margin-left: 93px;
 }
 
-.item-nav:not(:last-child) {
+.site-nav .item:not(:last-child) {
     margin-right: 50px;
 }
 
 .list-contact {
     display: flex;
     margin-left: auto;
+    align-self: center;
 }
+
+.list-contact .item:not(:last-child) {
+    margin-right: 50px;
+}
+
 
 ul li.current a {
     color: var(--brand-color);
@@ -134,7 +134,7 @@ ul li.current a {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
-    margin-right: 50px;
+    padding: 32px 0;
 }
 .contact-us-header:hover,
 .contact-us-header:focus {
@@ -142,6 +142,7 @@ ul li.current a {
 }
 .hero {
     background: #2F303A;
+    text-align: center;
 }
 
 .hero-title {
@@ -151,7 +152,8 @@ ul li.current a {
     font-size: 44px;
     line-height: 1.4;
     letter-spacing: 0.06em;
-    text-align: center;
+    margin-bottom: 30px;
+    /* max-width: 696px; */
 }
 
 .hero-btn {
@@ -163,15 +165,20 @@ ul li.current a {
     line-height: 1.88;
     letter-spacing: 0.06em;
     cursor: pointer;
-    padding: 10px 32px;
-    /* margin: 0 700px 200px; */
     text-align: center;
     border-radius: 4px;
+    display: inline-block;
+    min-width: 200px;
+    padding: 10px 32px;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
     background: #188CE8;
+}
+
+.feature {
+    padding-top: 94px;
 }
 
 .feature-title-item {
@@ -181,6 +188,8 @@ ul li.current a {
     text-transform: uppercase;
     text-align: left;
     color: var(--text-color);
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .feature-text {
@@ -188,8 +197,38 @@ ul li.current a {
     color: #757575;
 }
 
+.feature-list {
+    display: flex;
+}
+
+.feature-list .item:not(:last-child) {
+    margin-right: 30px;
+}
+.feature-list .item {
+    width: 270px;
+}
+
+.works {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.list-works {
+    display: flex;
+}
+
+.list-works .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.list-works .item {
+    width: 370px;
+}
+
 .team {
     background-color: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team-title, .works-title {
@@ -197,12 +236,14 @@ ul li.current a {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .team-member {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    margin-bottom: 10px;
 }
 
 .team-text {
@@ -210,6 +251,25 @@ ul li.current a {
     font-size: 16px;
     line-height: 1.9;
     color: #757575;
+}
+
+.list-team {
+    display: flex;
+}
+
+.list-team .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.list-team .item {
+    width: 270px;
+}
+
+.card-team {
+    background-color: var(--accent-color);
+    text-align: center;  
+    padding: 30px 0;
+    border: 2px solid transparent;
 }
 
 .portfolio-list {
@@ -229,7 +289,9 @@ ul li.current a {
     background: #F5F4FA;
     color: var(--text-color);
     cursor: pointer;
-    border: #F5F4FA;
+    border: transparent;
+    display: inline-block;
+    min-width: 73px;
     border-radius: 4px;
     padding: 6px 22px;
 }
@@ -291,14 +353,22 @@ ul li.current a {
 
 .footer-bg {
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
 }
 
 .address-footer {
     color: var(--accent-color);
+    margin-bottom: 9px;
 }
 
-.contacts-footer {
+.contacts-footer1, .contacts-footer2 {
     color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 9px;
 }
 
 address {
