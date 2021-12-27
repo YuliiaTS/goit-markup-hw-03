@@ -272,7 +272,6 @@ ul li.current a {
     background-color: var(--accent-color);
     text-align: center;  
     padding: 30px 0;
-    border: 2px solid transparent;
 }
 
 .portfolio {
@@ -343,11 +342,8 @@ ul li.current a {
 }
 
 .card-content {
-    width: 370px;
     border: 1px solid #EEEEEE;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: transparent;
+    border-top: none;
     padding: 20px 24px;
 }
 
@@ -357,18 +353,24 @@ ul li.current a {
     padding-bottom: 60px;
 }
 
-.footer-logo {
+.footer-bg a {
     margin-bottom: 20px;
 }
 
 .address-footer {
     color: var(--accent-color);
-    margin-bottom: 9px;
 }
 
 .contacts-footer1, .contacts-footer2 {
     color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 9px;
+}
+
+.list-footer {
+    margin-top: 9px;
+}    
+
+.item-footer {
+    margin-top: 9px;
 }
 
 address {
